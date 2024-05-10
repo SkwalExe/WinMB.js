@@ -9,6 +9,11 @@
         "/dist/**/*.d.ts",
         "/dist/**/*.js.map"
     ],
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "private": false,
     "exports": {
         "import": "dist/lib-esm/index.js",
         "require": "dist/lib-cjs/index.js"
