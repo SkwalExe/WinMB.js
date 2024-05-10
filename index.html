@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            user-select: none;
+            background: url(/assets/bg.svg) no-repeat center center fixed #1c1c1c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Double-click!</h1>
+    <p>Use 'npm run serve'</h1>
+    <script src="dist/winmb.umd.js"></script>
+    <script>
+
+        const random = (list) =>
+            list[Math.floor((Math.random()*list.length))];
+
+        const windowsMessageBox = new WinMB("./src/assets");
+        document.addEventListener("dblclick", () => {
+            const args = random([
+                ["WinMB.js", "A good programmer is someone who always looks both ways before crossing a one-way street.", "info", [{text:"Cancel"}, {text: "OK"}]],
+                ["Hello World!", "I don't always test my code, but when I do, I do it in production.", "error", [{text:"hello"}, {text: "goodbye"}]],
+                ["WinMB.js", "Perl: The only language that looks the same before and after RSA encryption.", "warning"]
+
+            ])
+            windowsMessageBox.show(...args);
+
+        })
+    </script>
+</body>
+
+</html>

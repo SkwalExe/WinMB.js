@@ -1,0 +1,68 @@
+.winmb {
+    background-color: white !important;
+    border: 1.5px solid #2f90db !important;
+    position: fixed !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px !important;
+    min-width: 250px !important;
+    max-width: 350px !important;
+    user-select: none !important;
+}
+
+.winmb * {
+    color: black !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.winmb .titleBar img {
+    height: 22px !important;
+    cursor: pointer !important;
+    padding: 4px !important;
+}
+
+.winmb .titleBar img:hover {
+    background-color: #c75050 !important;
+}
+
+.winmb .titleBar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    font-size: 15px !important;
+}
+
+.winmb .titleBar .title {
+    margin-left: 5px !important;
+}
+
+.winmb .content img {
+    height: 35px !important;
+    margin-right: 10px !important;
+}
+
+.winmb button {
+    padding: 2px 20px !important;
+    border: 1.5px dotted #696969 !important;
+    outline: 2px outset #696969 !important;
+    outline-offset: 2px !important;
+    margin: 5px !important;
+    border-radius: 0 !important;
+    background-color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: max-content !important;
+}
+
+.winmb .content {
+    padding: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    word-break: break-word !important;
+}
+
+.winmb .buttons {
+    padding: 5px !important;
+    background-color: #f0f0f0 !important;
+    display: flex !important;
+    justify-content: right !important;
+}
