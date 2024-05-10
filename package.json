@@ -1,9 +1,9 @@
 {
     "name": "@skwalexe/winmb",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Windows-like dialogue boxes for your website",
-    "main": "dist/lib-cjs/main.js",
-    "module": "dist/lib-esm/index.js",
+    "main": "./dist/lib-cjs/main.js",
+    "module": "./dist/lib-esm/index.js",
     "files": [
         "/dist/**/*.js",
         "/dist/**/*.d.ts",
@@ -15,8 +15,8 @@
     },
     "private": false,
     "exports": {
-        "import": "dist/lib-esm/index.js",
-        "require": "dist/lib-cjs/index.js"
+        "import": "./dist/lib-esm/index.js",
+        "require": "./dist/lib-cjs/index.js"
     },
     "devDependencies": {
         "@babel/cli": "^7.24.5",
