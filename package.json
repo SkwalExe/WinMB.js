@@ -18,6 +18,7 @@
         "import": "./dist/lib-esm/main.js",
         "require": "./dist/lib-cjs/main.js"
     },
+    "jsdelivr": "./dist/winmb.umd.js",
     "devDependencies": {
         "@babel/cli": "^7.24.5",
         "@babel/core": "^7.24.5",
