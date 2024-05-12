@@ -36,10 +36,10 @@ yarn add @skwalexe/winmb
 Then import the library.
 
 ```js
-# For CommonJS
+// For CommonJS
 const WinMB = require('@skwalexe/winmb')
 
-# For ES Modules
+// For ES Modules
 import WinMB from '@skwalexe/winmb'
 ```
 
