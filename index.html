@@ -18,14 +18,14 @@
 
 <body>
     <h1>Double-click!</h1>
-    <p>Use 'npm run serve'</h1>
+    <p>Use 'npm run serve'</p>
     <script src="dist/winmb.umd.js"></script>
     <script>
 
         const random = (list) =>
             list[Math.floor((Math.random()*list.length))];
 
-        const windowsMessageBox = new WinMB("./src/assets");
+        const wmbEngine = new WinMB("./src/assets");
         document.addEventListener("dblclick", () => {
             const args = random([
                 ["WinMB.js", "A good programmer is someone who always looks both ways before crossing a one-way street.", "info", [{text:"Cancel"}, {text: "OK"}]],
@@ -33,7 +33,7 @@
                 ["WinMB.js", "Perl: The only language that looks the same before and after RSA encryption.", "warning"]
 
             ])
-            windowsMessageBox.show(...args);
+            wmbEngine.show(...args);
 
         })
     </script>

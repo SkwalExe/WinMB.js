@@ -1,5 +1,5 @@
-// Shorthand for document.querySelectorAll<HTMLElement>("selector")
-const $$ = (selector: string) => document.querySelectorAll<HTMLElement>(selector)
+import { GetRandomInt, $$, playSound } from "./utils"
+
 // The name of the css file to import from the assets path
 const cssFileName = 'winmb.css'
 // The name of the class that will be used to identify our message boxes within the DOM
@@ -70,22 +70,6 @@ export class WinMB {
             let startMouseY = 0
             let startMessagePosY = 0
             let startMessagePosX = 0
-
-            const GetRandomInt = (min: number, max: number) => {
-                min = Math.ceil(min)
-                max = Math.floor(max)
-                const RandomInt = Math.floor(Math.random() * (max - min + 1)) + min
-                return RandomInt
-            }
-
-            const playSound = (path: string) => {
-                new AudioContext()
-
-                const audio = new Audio(path)
-                audio.play()
-
-                return audio
-            }
 
             // Put messageBox on top of other boxes using zIndex
             const setZIndex = () => {
