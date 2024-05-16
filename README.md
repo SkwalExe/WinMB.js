@@ -211,7 +211,7 @@ git push -u origin my-new-feature
 wmbEngine.show("I am a title", "I am a message")
 ```
 
-![Example 1](assets/example1.png)
+![Example 1](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example1.png)
 
 ---
 
@@ -221,20 +221,20 @@ wmbEngine.show("I am a title", "I am a message")
 wmbEngine.show("skwal.net", "Message box types", "info")
 ```
 
-![Example 2](assets/example2.png)
+![Example 2](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example2.png)
 
 ```js
 wmbEngine.show("skwal.net", "Message box types", "error")
 ```
 
-![Example 3](assets/example3.png)
+![Example 3](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example3.png)
 
 
 ```js
 wmbEngine.show("skwal.net", "Message box types", "warning")
 ```
 
-![Example 4](assets/example4.png)
+![Example 4](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example4.png)
 
 ### Buttons
 
@@ -242,7 +242,7 @@ wmbEngine.show("skwal.net", "Message box types", "warning")
 wmbEngine.show("skwal.net", "Buttons", "info", [{text: "Hello", value: true}, {text: "World", value: false}])
 ```
 
-![Example 5](assets/example5.png)
+![Example 5](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example5.png)
 
 ---
 
@@ -252,12 +252,12 @@ wmbEngine.show("skwal.net", "Buttons", "info", [{text: "Hello", value: true}, {t
 wmbEngine.show("skwal.net", "Default position", "info", [{text: "Hello", value: true}], "default")
 ```
 
-![Example 6](assets/example6.png)
+![Example 6](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example6.png)
 
 ```js
 wmbEngine.show("skwal.net", "Random position", "warning", [{text: "Hello", value: true}], "random")
 ```
 
-![Example 7](assets/example7.png)
+![Example 7](https://raw.githubusercontent.com/SkwalExe/WinMB.js/main/assets/example7.png)
 
 
