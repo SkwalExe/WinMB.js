@@ -5,7 +5,7 @@ export const GetRandomInt = (min: number, max: number): number => {
     return RandomInt
 }
 
-// Shorthand for document.querySelectorAll<HTMLElement>("selector")
+//Shorthand for document.querySelectorAll<HTMLElement>("selector")
 export const $$ = (selector: string) => document.querySelectorAll<HTMLElement>(selector)
 
 export const playSound = (path: string) => {
