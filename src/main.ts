@@ -1,2 +1,2 @@
-import {WinMB} from './winmb'
+import WinMB from './winmb'
 export default WinMB
