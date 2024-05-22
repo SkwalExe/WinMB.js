@@ -11,7 +11,7 @@ interface Button {
     value: string | number | boolean
 }
 
-export class WinMB {
+export default class WinMB {
     // An url for the assets MUST be specified.
     // We also load the required css into the page
     constructor(assetsUrl: string) {
