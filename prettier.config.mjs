@@ -8,7 +8,7 @@ const config = {
     bracketSpacing: false,
     bracketSameLine: true,
     arrowParens: 'always',
-    printWidth: 120,
+    printWidth: 100,
     endOfLine: 'lf',
 }
 
