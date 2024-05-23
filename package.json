@@ -38,6 +38,7 @@
     },
     "scripts": {
         "lint": "eslint .",
+        "check-types": "tsc --noEmit",
         "lint:fix": "eslint --fix .",
         "format": "prettier ./src/**/*.ts --config prettier.config.mjs --write",
         "clean": "shx rm -rf ./dist",

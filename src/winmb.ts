@@ -1,4 +1,4 @@
-import { GetRandomInt, $$, playSound } from "./utils"
+import {GetRandomInt, $$, playSound} from './utils'
 
 // The name of the css file to import from the assets path
 const cssFileName = 'winmb.css'
@@ -59,11 +59,15 @@ export default class WinMB {
         position: string | Array<number> = 'default'
     ): Promise<boolean | string | number> => {
         if (typeof position === 'string' && !['random', 'default'].includes(position))
-            throw new Error('Position must be either "random", "default", or an array of two numbers [x, y].')
+            throw new Error(
+                'Position must be either "random", "default", or an array of two numbers [x, y].'
+            )
         if (!['info', 'error', 'warning'].includes(type))
             throw new Error('Invalid message type : please use "info", "error" or "warning"')
-        if (!Array.isArray(buttons)) throw new Error('Invalid buttons : please use an array of [label, returnValue]')
-        if (!(buttons.length > 0)) throw new Error('Invalid button list : please specify at least one button')
+        if (!Array.isArray(buttons))
+            throw new Error('Invalid buttons : please use an array of [label, returnValue]')
+        if (!(buttons.length > 0))
+            throw new Error('Invalid button list : please specify at least one button')
 
         return new Promise((resolve) => {
             let startMouseX = 0
@@ -89,7 +93,8 @@ export default class WinMB {
             if (position === 'random')
                 position = [GetRandomInt(0, window.innerWidth), GetRandomInt(0, window.innerHeight)]
             else if (position === 'default')
-                messageBox.style.left = messageBox.style.top = 100 + (this.boxList.length + 1) * 15 + 'px'
+                messageBox.style.left = messageBox.style.top =
+                    100 + (this.boxList.length + 1) * 15 + 'px'
 
             messageBox.style.left = position[0] + 'px'
             messageBox.style.top = position[1] + 'px'
@@ -142,8 +147,12 @@ export default class WinMB {
                 startMouseY = event.clientY
                 setZIndex()
 
-                startMessagePosX = parseInt(messageBox.style.left.substring(0, messageBox.style.left.length - 2))
-                startMessagePosY = parseInt(messageBox.style.top.substring(0, messageBox.style.top.length - 2))
+                startMessagePosX = parseInt(
+                    messageBox.style.left.substring(0, messageBox.style.left.length - 2)
+                )
+                startMessagePosY = parseInt(
+                    messageBox.style.top.substring(0, messageBox.style.top.length - 2)
+                )
             }
 
             titleBar.onmouseup = function () {
