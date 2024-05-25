@@ -6,9 +6,11 @@ const cssFileName = 'winmb.css'
 // Must be the same as in winmb.css
 const cssClass = 'winmb'
 
-interface Button {
+type ButtonValue = string | number | boolean
+
+type Button = {
     text: string
-    value: string | number | boolean
+    value?: ButtonValue
 }
 
 export default class WinMB {
@@ -57,7 +59,7 @@ export default class WinMB {
         type: string = 'error',
         buttons: Button[] = [{text: 'ok', value: true}],
         position: string | Array<number> = 'default'
-    ): Promise<boolean | string | number> => {
+    ): Promise<ButtonValue> => {
         if (typeof position === 'string' && !['random', 'default'].includes(position))
             throw new Error(
                 'Position must be either "random", "default", or an array of two numbers [x, y].'
