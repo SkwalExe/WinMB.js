@@ -107,6 +107,13 @@ This is a simple library that can create Windows message boxes on a web page. It
 - ESLint for linting.
 - Prettier.js for formatting.
 
+
+This library uses `pnpm` as a package manager. You can install it with:
+
+```bash
+sudo npm install -g pnpm
+```
+
 ## Setting up the development environment 🖥️
 
 - [Fork this repository to your own GitHub account.](https://github.com/SkwalExe/WinMB.js/fork)
@@ -117,17 +124,17 @@ git clone https://github.com/YOUR_USERNAME/WinMB.js
 cd ./WinMB.js
 ```
 
-- Install devDependencies
+- Install (dev)dependencies
 
 ```bash
-npm install --include=dev
+pnpm install
 ```
 
-- Run the npm `serve` script to start a local development server on port `10001`
+- Run the pnpm `serve` script to start a local development server on port `10001`
     - This will continuously rebuild the UMD bundle and reload the page.
 
 ```bash
-npm run serve
+pnpm run serve
 ```
 
 - Open the local development server on `https://localhost:10001/` and open the project in your IDE.
@@ -172,9 +179,9 @@ git checkout -b my-new-feature
 - When you finished your changes, you must check your code's formatting and linting and fix all the errors.
 
 ```bash
-npm run lint:fix # check for linting errors
-npm run check-types # check for type errors
-npm run format # comply with foramtting rules
+pnpm run lint:fix # check for linting errors
+pnpm run check-types # check for type errors
+pnpm run format # comply with foramtting rules
 ```
 
 - After that, add your changes to `CHANGELOG.md` and update the README if needed.
@@ -191,7 +198,7 @@ git push -u origin my-new-feature
 
 - Finally, you can create your pull request from your fork repo's github page.
 
-## NPM scripts
+## PNPM scripts
 
 - `lint`: Perform ESLint checks.
 - `format`: Format codebase with prettier.
