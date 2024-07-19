@@ -48,7 +48,7 @@ import WinMB from '@skwalexe/winmb'
 If you use this method, the library will be available globally as `WinMB`.
 
 ```js
-<script src="https://cdn.jsdelivr.net/npm/@skwalexe/winmb@0.1.3/dist/winmb.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@skwalexe/winmb@0.1.4/dist/winmb.umd.js"></script>
 ```
 
 # Using this library 📦
@@ -58,7 +58,7 @@ This library exports a `WinMB` class which acccepts the following parameters:
 - `assetsUrl / required`: WinMB needs to load **remote assets** such as css stylesheets, sounds, and images, which you can host on your own servers. This parameter is used to tell WinMB where it can find these assets. You must provide a **base url**, to which WinMB will just append the requested asset's file name. If you don't want to host the assets yourself, you can use JSDelivr like in the example below.
 
 ```js
-const wmbEngine = WinMB('https://cdn.jsdelivr.net/gh/SkwalExe/WinMB.js@0.1.3/src/assets/')
+const wmbEngine = WinMB('https://cdn.jsdelivr.net/gh/SkwalExe/WinMB.js@0.1.4/src/assets/')
 ```
 
 Once you instanciated the `WinMB` class, it exposes the follwing methods:

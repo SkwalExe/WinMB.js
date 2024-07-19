@@ -90,7 +90,7 @@ export default class WinMB {
             const messageBox = document.createElement('div')
             messageBox.classList.add(cssClass)
 
-            messageBox.style.zIndex = (this.boxList.length + 1).toString()
+            messageBox.style.zIndex = (this.boxList.length + 10001).toString()
 
             if (position === 'random')
                 position = [GetRandomInt(0, window.innerWidth), GetRandomInt(0, window.innerHeight)]
