@@ -31,10 +31,14 @@ features:
 ---
 
 <script setup>
-setTimeout(() => {
-    const wmbEngine = new WinMB('https://cdn.jsdelivr.net/gh/SkwalExe/WinMB.js@0.1.4/src/assets/')
+import { onMounted } from 'vue'
+
+onMounted(() => {
     setTimeout(() => {
-        wmbEngine.show("Updates are available", "Please reboot your computer to install Windows updates.", "error")
-    }, 2500)
-}, 1000)
+        const wmbEngine = new WinMB('https://cdn.jsdelivr.net/gh/SkwalExe/WinMB.js@0.1.4/src/assets/')
+        setTimeout(() => {
+            wmbEngine.show("Updates are available", "Please reboot your computer to install Windows updates.", "error")
+        }, 2500)
+    }, 1000)
+})
 </script>
